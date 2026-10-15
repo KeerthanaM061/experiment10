@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/akshatha1990M/docker2026.git'
+                    url: 'https://github.com/KeerthanaM061/experiment10'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
                 )]) {
                     bat '''
                     @echo off
-                    echo %DOCKER_PAT%|docker login -u akshatha29 --password-stdin
+                    echo %DOCKER_PAT%|docker login -u keerthanam061 --password-stdin
                    if errorlevel 1 exit /b 1
                     '''
                 }
